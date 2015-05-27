@@ -470,6 +470,7 @@
     [_zoomDelegateQueue cancelAllOperations];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [_mapScrollView removeObserver:self forKeyPath:@"contentOffset"];
+    _mapScrollView.delegate = nil;
     [_tileSourcesContainer cancelAllDownloads];
     _locationManager.delegate = nil;
     [_locationManager stopUpdatingLocation];
