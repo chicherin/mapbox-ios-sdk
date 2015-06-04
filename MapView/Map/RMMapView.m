@@ -435,7 +435,11 @@
         _mapScrollView.frame = bounds;
         _overlayView.frame = bounds;
 
+        _lastContentOffset = CGPointZero;
+        CGPoint contentOffset = _mapScrollView.contentOffset;
         [self setCenterProjectedPoint:centerPoint animated:NO];
+        [self scrollView:_mapScrollView correctedContentOffset:&contentOffset];
+        _mapScrollView.contentOffset = contentOffset;
 
         [self correctPositionOfAllAnnotations];
 
