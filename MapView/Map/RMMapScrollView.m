@@ -75,4 +75,10 @@
         self.zoomScale *= factor;
 }
 
+- (void)setBounds:(CGRect)bounds {
+
+  [super setBounds:bounds];
+  [self setContentSize:self.contentSize];
+}
+
 @end
