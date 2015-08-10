@@ -3177,10 +3177,10 @@
 
             // Sort the rest in increasing y-position.
             //
-            if (annotation1.absolutePosition.y > annotation2.absolutePosition.y)
+            if (annotation1.position.y > annotation2.position.y)
                 return NSOrderedDescending;
 
-            if (annotation1.absolutePosition.y < annotation2.absolutePosition.y)
+            if (annotation1.position.y < annotation2.position.y)
                 return NSOrderedAscending;
 
             return NSOrderedSame;
