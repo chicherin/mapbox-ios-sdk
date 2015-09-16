@@ -173,7 +173,7 @@
     NSMutableSet *_visibleAnnotations;
 
     BOOL _constrainMovement, _constrainMovementByUser;
-    RMProjectedRect _constrainingProjectedBounds, _constrainingProjectedBoundsByUser;
+    RMProjectedRect _constrainingProjectedBoundsByUser;
 
     double _metersPerPixel;
     float _zoom, _lastZoom;
