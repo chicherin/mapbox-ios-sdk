@@ -68,6 +68,7 @@ Pod::Spec.new do |m|
   m.xcconfig = {
     'OTHER_LDFLAGS'        => '-ObjC',
     'LIBRARY_SEARCH_PATHS' => '"${PODS_ROOT}/Mapbox-iOS-SDK/Proj4"'
+    'ENABLE_BITCODE' => 'NO'
   }
 
   m.preserve_paths = 'MapView/MapView.xcodeproj', 'MapView/Map/Resources'
