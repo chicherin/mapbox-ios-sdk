@@ -28,6 +28,7 @@
 #ifndef _RMFOUNDATION_H_
 #define _RMFOUNDATION_H_
 
+#import <UIKit/UIKit.h>
 #include <stdbool.h>
 
 #if __OBJC__
